@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn four primary characteristics of modern digital computers and the key hardware technology used in each of the five generations." />
+  <title>Computer Characteristics & Generations</title>
+  <style>
+    :root { --ink:#18233b; --muted:#5b6780; --primary:#3659d9; --primary-dark:#243da7; --bg:#f4f7ff; --card:#fff; --line:#e0e7f5; --accent:#eaf0ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); line-height:1.6; }
+    header { color:white; padding:64px 20px 58px; background:radial-gradient(circle at 85% 20%, #7088ff 0, transparent 27%), linear-gradient(135deg,#18265a,#3659d9 70%,#637bf0); }
+    .hero, main, footer { max-width:1080px; margin:auto; }
+    .eyebrow { display:inline-block; font-size:.78rem; letter-spacing:.14em; text-transform:uppercase; font-weight:800; color:#dce5ff; border:1px solid #8da1ff; border-radius:999px; padding:5px 12px; }
+    h1 { font-size:clamp(2.1rem,5vw,3.8rem); line-height:1.08; letter-spacing:-.04em; max-width:780px; margin:18px 0 14px; }
+    header p { max-width:690px; margin:0; color:#e8edff; font-size:1.08rem; }
+    main { padding:34px 20px 60px; }
+    section { margin:0 0 38px; }
+    .section-heading { display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+    .number { flex:0 0 42px; height:42px; border-radius:13px; background:var(--primary); color:white; display:grid; place-items:center; font-weight:800; }
+    h2 { font-size:clamp(1.45rem,3vw,2rem); letter-spacing:-.025em; margin:0 0 4px; }
+    .section-heading p { color:var(--muted); margin:0; }
+    .characteristics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:22px; box-shadow:0 8px 24px rgba(35,58,120,.045); }
+    .card .icon { width:44px; height:44px; border-radius:13px; display:grid; place-items:center; font-size:1.4rem; background:var(--accent); margin-bottom:12px; }
+    h3 { margin:0 0 7px; font-size:1.12rem; }
+    .card p { margin:0; color:var(--muted); }
+    .generation-list { display:grid; gap:12px; }
+    .generation { display:grid; grid-template-columns:64px 1fr; gap:17px; align-items:start; background:white; border:1px solid var(--line); border-radius:16px; padding:18px 20px; }
+    .gen-num { width:56px; height:56px; border-radius:16px; background:var(--accent); color:var(--primary-dark); display:grid; place-items:center; font-size:1.1rem; font-weight:850; }
+    .generation h3 { display:flex; flex-wrap:wrap; align-items:center; gap:9px; }
+    .era { font-size:.75rem; font-weight:700; color:var(--primary-dark); background:#edf1ff; border-radius:999px; padding:3px 9px; }
+    .generation p { margin:0; color:var(--muted); }
+    .tech { margin-top:7px; color:var(--ink); font-size:.95rem; }
+    .tech strong { color:var(--primary-dark); }
+    .note { margin-top:16px; padding:15px 18px; border-left:4px solid var(--primary); background:#eaf0ff; border-radius:0 12px 12px 0; color:#34446d; }
+    .keywords { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+    .keywords span { background:white; border:1px solid var(--line); border-radius:999px; padding:5px 11px; color:var(--muted); font-size:.85rem; }
+    footer { padding:0 20px 28px; text-align:center; color:var(--muted); font-size:.88rem; }
+    @media (max-width:640px) { header { padding:48px 20px 42px; } .characteristics { grid-template-columns:1fr; } .generation { grid-template-columns:48px 1fr; gap:12px; padding:15px; } .gen-num { width:46px; height:46px; border-radius:13px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <span class="eyebrow">Computer Fundamentals · Study Notes</span>
+      <h1>Computer Characteristics &amp; Hardware Across Generations</h1>
+      <p>Explore four defining characteristics of modern digital computers, then trace the major hardware technology behind each of the five computer generations.</p>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="characteristics-title">
+      <div class="section-heading">
+        <div class="number">01</div>
+        <div><h2 id="characteristics-title">Four primary characteristics</h2><p>Modern digital computers are designed to process data quickly, consistently, and reliably.</p></div>
+      </div>
+      <div class="characteristics">
+        <article class="card"><div class="icon" aria-hidden="true">⚡</div><h3>Speed</h3><p>A computer performs millions or billions of operations in a very short time, making it useful for complex calculations and large workloads.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🎯</div><h3>Accuracy</h3><p>When the data and instructions are correct, a computer can produce highly accurate results. Incorrect input or instructions can still lead to incorrect output.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">💾</div><h3>Storage capacity</h3><p>A computer can store large amounts of data and instructions and retrieve them quickly when needed.</p></article>
+        <article class="card"><div class="icon" aria-hidden="true">🔁</div><h3>Diligence and consistency</h3><p>A computer can repeat tasks for long periods without getting tired or losing concentration, producing consistent results when conditions remain the same.</p></article>
+      </div>
+    </section>
+
+    <section aria-labelledby="generations-title">
+      <div class="section-heading">
+        <div class="number">02</div>
+        <div><h2 id="generations-title">The five generations of computers</h2><p>Each generation is commonly identified by a major change in its underlying hardware technology.</p></div>
+      </div>
+      <div class="generation-list">
+        <article class="generation"><div class="gen-num">1st</div><div><h3>First generation <span class="era">Approx. 1940s–1950s</span></h3><p>Early electronic computers were large, power-hungry machines that generated substantial heat.</p><div class="tech"><strong>Key hardware:</strong> Vacuum tubes</div></div></article>
+        <article class="generation"><div class="gen-num">2nd</div><div><h3>Second generation <span class="era">Approx. 1950s–1960s</span></h3><p>Computers became smaller, more reliable, and more energy-efficient than vacuum-tube systems.</p><div class="tech"><strong>Key hardware:</strong> Transistors</div></div></article>
+        <article class="generation"><div class="gen-num">3rd</div><div><h3>Third generation <span class="era">Approx. 1960s–1970s</span></h3><p>Multiple electronic components were placed on integrated circuits, improving size, speed, and reliability.</p><div class="tech"><strong>Key hardware:</strong> Integrated circuits (ICs)</div></div></article>
+        <article class="generation"><div class="gen-num">4th</div><div><h3>Fourth generation <span class="era">From the 1970s onward</span></h3><p>Microprocessors made personal computers practical and helped place processing power on a single chip.</p><div class="tech"><strong>Key hardware:</strong> Microprocessors using very-large-scale integration (VLSI)</div></div></article>
+        <article class="generation"><div class="gen-num">5th</div><div><h3>Fifth generation <span class="era">Emerging and ongoing</span></h3><p>Often associated with artificial intelligence, parallel processing, and systems designed to handle learning, reasoning, and language tasks.</p><div class="tech"><strong>Key hardware:</strong> ULSI chips and advanced parallel-processing hardware, including AI accelerators</div></div></article>
+      </div>
+      <div class="note"><strong>Remember:</strong> The generation dates are approximate and can vary by textbook. The fifth generation is not defined by one universally agreed-upon component; it is often described in terms of AI-oriented capabilities as well as advanced hardware.</div>
+      <div class="keywords" aria-label="Keywords"><span>List</span><span>Identify</span><span>Digital computer</span><span>Hardware</span><span>Computer generations</span></div>
+    </section>
+  </main>
+  <footer>Computer Fundamentals · Quick revision page</footer>
+</body>
+</html>
